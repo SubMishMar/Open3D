@@ -3,7 +3,7 @@
 Getting Started
 #######################
 
-This guide gets you started programming with Open3D. The basic tools you need are `git <https://git-scm.com/>`_, `CMake <https://cmake.org/>`_, and **a non-ancient C++ compiler** that supports C++11, such as gcc 4.8+, Visual Studio 2015+, or XCode 8.0+. If you want to install the Python binding, make sure you have Python 2.7 or 3.5+ installed.
+This guide gets you started programming with Open3D. The basic tools you need are `git <https://git-scm.com/>`_, `CMake <https://cmake.org/>`_, and **a non-ancient C++ compiler** that supports C++11, such as gcc 4.8+, Visual Studio 2015 update 3+, or XCode 8.0+. If you want to install the Python binding, make sure you have Python 2.7 or 3.5+ installed.
 
 .. _getting_started_compilation:
 
@@ -38,7 +38,7 @@ Install Python binding module by running the following script.
     cd util/scripts
     ./install.sh
 
-.. tip:: To uninstall the ``py3d`` module, use ``uninstall.sh``.
+.. tip:: To uninstall the ``open3d`` module, use ``uninstall.sh``.
 
 .. _getting_started_compilation_osx:
 
@@ -62,7 +62,7 @@ Alternatively, if you want to use Xcode IDE, run:
 Windows
 -----------
 
-On Windows, only **Visual Studio 2015 service pack 3** and newer are supported since Open3D relies heavily on C++11 language features. For easy compilation, we have included source code of all dependent libraries in the ``src/External`` folder.
+On Windows, only **Visual Studio 2015 update 3** and newer are supported since Open3D relies heavily on C++11 language features. For easy compilation, we have included source code of all dependent libraries in the ``src/External`` folder.
 
 You can use the CMake GUI as shown in the following figure. Specify the directories, click ``Configure`` and choose the correct Visual Studio version (e.g., ``Visual Studio 14 2015 Win64``), then click ``Generate``. This will create an ``Open3D.sln`` file in your build directory.
 
@@ -100,8 +100,8 @@ Simply deleting ``[PATH_TO_OPEN3D_PYTHON_MODULE].pyd`` to uninstall the module.
 Running Open3D tutorials
 ========================================
 
-Importing py3d module
-----------------------
+Importing open3d module
+-----------------------
 
 For quick sanity check, try importing the library from the python interactive shell:
 
@@ -109,7 +109,7 @@ For quick sanity check, try importing the library from the python interactive sh
 
     python
 
-    >>> import py3d
+    >>> import open3d
 
 .. error:: If there is an issue, check whether the Python version detected by cmake (see log from cmake) and the Python version for command line environment (type python -V). They should match. If it is not, please follow :ref:`python_binding` in docs. In addition, `python binding issue  <https://github.com/IntelVCL/Open3D/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22python+binding%22+>`_ on Github repository has helpful notes from Open3D users.
 
